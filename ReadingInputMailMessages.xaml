@@ -1,0 +1,383 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ReadingInputMailMessages" this:ReadingInputMailMessages.in_Mail="cteja@conservice.com" this:ReadingInputMailMessages.in_MailPassword="fjzi lmid when gtjk" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System.Net.Mail" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="in_Mail" Type="InArgument(x:String)" />
+    <x:Property Name="in_MailPassword" Type="InArgument(x:String)" />
+    <x:Property Name="DT_MailStatus" Type="InArgument(sd:DataTable)" />
+    <x:Property Name="Mail_Messages" Type="OutArgument(scg:List(snm:MailMessage))" />
+    <x:Property Name="Bool_Spam" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="Bool_Inbox" Type="OutArgument(x:Boolean)" />
+  </x:Members>
+  <this:ReadingInputMailMessages.in_Config>
+    <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" />
+  </this:ReadingInputMailMessages.in_Config>
+  <this:ReadingInputMailMessages.DT_MailStatus>
+    <InArgument x:TypeArguments="sd:DataTable" />
+  </this:ReadingInputMailMessages.DT_MailStatus>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>934,737</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ReadingInputMailMessages_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.IMAP.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ReadingInputMailMessages" sap:VirtualizedContainerService.HintSize="552,632" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="490,521" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch.Try>
+        <Sequence sap:VirtualizedContainerService.HintSize="450,469" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="scg:List(snm:MailMessage)" Name="JunkMail_Messages" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="LogFrameworks\InfoLogEntry.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Framework\InfoLogEntry.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="WorkflowName">
+                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Split(Split(System.Reflection.Assembly.GetExecutingAssembly().location,&quot;_&quot;)(Split(System.Reflection.Assembly.GetExecutingAssembly().location,&quot;_&quot;).Count-1),&quot;.&quot;)(0)" />
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="Status">
+                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;Reading Input Mails from &quot;+if(Bool_Inbox,&quot;JUNK&quot;,&quot;INBOX&quot;)+&quot; - &quot;+in_Mail" />
+              </InArgument>
+              <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">
+                <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="in_Config" />
+              </InArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
+          <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+            <ui:IfElseIf.ConditionBlocks>
+              <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                <ui:IfElseIfBlock BlockType="If" Condition="[not DT_MailStatus.asenumerable.where(function(x) (String.isnullorempty(x(&quot;Bot Status&quot;).tostring) and x(0).tostring.equals(Environment.MachineName) and x(1).tostring.trim.equals(in_Mail.trim))).CopyToDataTable.Rows(0)(&quot;Inbox Status&quot;).ToString.equals(&quot;Processed&quot;)]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_1">
+                  <ui:IfElseIfBlock.Then>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,686" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="scg:List(snm:MailMessage)">[Mail_Messages]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="scg:List(snm:MailMessage)">[Nothing]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:GetIMAPMailMessages ClientName="{x:Null}" ClientVersion="{x:Null}" FilterExpression="{x:Null}" FilterExpressionCharacterSet="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" DeleteMessages="False" DisplayName="Get IMAP Mail Messages" Email="[in_Mail]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="GetIMAPMailMessages_7" IgnoreCRL="False" MailFolder="Inbox" MarkAsRead="False" Messages="[Mail_Messages]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Password="[in_MailPassword]" Port="[cint(in_Config(&quot;Port&quot;))]" SecureConnection="Auto" Server="[in_Config(&quot;Server&quot;).ToString]" Top="[cint(in_Config(&quot;MailCount&quot;).ToString)]" UseOAuth="[in_Config(&quot;OauthRequiredMails&quot;).tostring.split(&quot;,&quot;).any(function(x) x.tostring.trim.equals(in_Mail.trim))]" />
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,163" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <TryCatch.Try>
+                                <ui:GetIMAPMailMessages ClientName="{x:Null}" ClientVersion="{x:Null}" FilterExpression="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" DeleteMessages="False" DisplayName="Get IMAP Mail Messages" Email="[in_Mail]" EnableSSL="True" FilterExpressionCharacterSet="US-ASCII" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="GetIMAPMailMessages_1" IgnoreCRL="False" MailFolder="Inbox" MarkAsRead="False" Messages="[Mail_Messages]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Password="[in_MailPassword]" Port="[cint(in_Config(&quot;Port&quot;))]" SecureConnection="Auto" Server="[in_Config(&quot;Server&quot;).ToString]" Top="[cint(in_Config(&quot;MailCount&quot;).ToString)]" UseOAuth="[in_Config(&quot;OauthRequiredMails&quot;).tostring.split(&quot;,&quot;).any(function(x) x.tostring.trim.equals(in_Mail.trim))]" />
+                              </TryCatch.Try>
+                              <TryCatch.Catches>
+                                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ActivityAction x:TypeArguments="s:Exception">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                    </ActivityAction.Argument>
+                                    <ui:GetIMAPMailMessages ClientName="{x:Null}" ClientVersion="{x:Null}" FilterExpression="{x:Null}" SecurePassword="{x:Null}" DeleteMessages="False" DisplayName="Get IMAP Mail Messages" Email="[in_Mail]" EnableSSL="True" FilterExpressionCharacterSet="US-ASCII" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="GetIMAPMailMessages_6" IgnoreCRL="False" MailFolder="Inbox" MarkAsRead="False" Messages="[Mail_Messages]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Password="[in_MailPassword]" Port="993" SecureConnection="Auto" Server="smtp.gmail.com" TimeoutMS="3600000" Top="[cint(in_Config(&quot;MailCount&quot;).ToString)]" UseOAuth="[in_Config(&quot;OauthRequiredMails&quot;).tostring.split(&quot;,&quot;).any(function(x) x.tostring.trim.equals(in_Mail.trim))]" />
+                                  </ActivityAction>
+                                </Catch>
+                              </TryCatch.Catches>
+                            </TryCatch>
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:CommentOut>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Boolean">[Bool_Inbox]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_5">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Boolean">[Bool_Spam]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,133" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <TryCatch.Catches>
+                                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ActivityAction x:TypeArguments="s:Exception">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                    </ActivityAction.Argument>
+                                    <ui:GetIMAPMailMessages ClientName="{x:Null}" ClientVersion="{x:Null}" FilterExpression="{x:Null}" SecurePassword="{x:Null}" Top="{x:Null}" UseOAuth="{x:Null}" DeleteMessages="False" DisplayName="Get IMAP Mail Messages" Email="[in_Mail]" EnableSSL="True" FilterExpressionCharacterSet="US-ASCII" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="GetIMAPMailMessages_4" IgnoreCRL="False" MailFolder="*PRINTED*" MarkAsRead="False" Messages="[Mail_Messages]" OnlyUnreadMessages="False" OrderByDate="NewestFirst" Password="[in_MailPassword]" Port="993" SecureConnection="Auto" Server="smtp.gmail.com" TimeoutMS="600000" />
+                                  </ActivityAction>
+                                </Catch>
+                              </TryCatch.Catches>
+                            </TryCatch>
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:CommentOut>
+                    </Sequence>
+                  </ui:IfElseIfBlock.Then>
+                </ui:IfElseIfBlock>
+                <ui:IfElseIfBlock BlockType="Else" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_2">
+                  <ui:IfElseIfBlock.Then>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,380" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="Folder" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="scg:List(snm:MailMessage)">[Mail_Messages]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="scg:List(snm:MailMessage)">[Nothing]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:GetIMAPMailMessages ClientName="{x:Null}" ClientVersion="{x:Null}" FilterExpression="{x:Null}" SecurePassword="{x:Null}" DeleteMessages="False" DisplayName="Get IMAP Mail Messages" Email="[in_Mail]" EnableSSL="True" FilterExpressionCharacterSet="US-ASCII" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="GetIMAPMailMessages_5" IgnoreCRL="False" MailFolder="JUNK" MarkAsRead="False" Messages="[Mail_Messages]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Password="[in_MailPassword]" Port="993" SecureConnection="Auto" Server="smtp.gmail.com" TimeoutMS="3600000" Top="[cint(in_Config(&quot;MailCount&quot;).ToString)]" UseOAuth="[in_Config(&quot;OauthRequiredMails&quot;).tostring.split(&quot;,&quot;).any(function(x) x.tostring.trim.equals(in_Mail.trim))]" />
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_4">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Boolean">[Bool_Spam]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </ui:IfElseIfBlock.Then>
+                </ui:IfElseIfBlock>
+              </sc:BindingList>
+            </ui:IfElseIf.ConditionBlocks>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:IfElseIf>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="LogFrameworks\InfoLogEntry.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Framework\InfoLogEntry.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="WorkflowName">
+                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Split(Split(System.Reflection.Assembly.GetExecutingAssembly().location,&quot;_&quot;)(Split(System.Reflection.Assembly.GetExecutingAssembly().location,&quot;_&quot;).Count-1),&quot;.&quot;)(0)" />
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="Status">
+                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;Reading Input Mails from &quot;+if(Bool_Inbox,&quot;JUNK&quot;,&quot;INBOX&quot;)+&quot; - &quot;+in_Mail+&quot; Completed&quot;" />
+              </InArgument>
+              <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">
+                <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="in_Config" />
+              </InArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="456,358" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence sap:VirtualizedContainerService.HintSize="450,289" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="LogFrameworks\ErrorLogsAndScreenshots.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Framework\ErrorLogsAndScreenshots.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">
+                    <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="in_Config" />
+                  </InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="WorkflowName">
+                    <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Split(Split(System.Reflection.Assembly.GetExecutingAssembly().location,&quot;_&quot;)(Split(System.Reflection.Assembly.GetExecutingAssembly().location,&quot;_&quot;).Count-1),&quot;.&quot;)(0)" />
+                  </InArgument>
+                  <InArgument x:TypeArguments="s:Exception" x:Key="SystemException">
+                    <VisualBasicValue x:TypeArguments="s:Exception" ExpressionText="exception" />
+                  </InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <Rethrow sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+  </Sequence>
+</Activity>

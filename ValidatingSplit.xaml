@@ -1,0 +1,865 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ValidatingSplit" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uoa="clr-namespace:UiPath.OmniPage.Activities;assembly=UiPath.OmniPage.Activities" xmlns:upap="clr-namespace:UiPath.PDF.Activities.PDF;assembly=UiPath.PDF.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_FilePath" Type="InArgument(x:String)" />
+    <x:Property Name="list_AccountNumber" Type="InArgument(s:String[])" />
+    <x:Property Name="NewName" Type="OutArgument(x:String)" />
+    <x:Property Name="in_PageCount" Type="InArgument(x:Int32)" />
+  </x:Members>
+  <this:ValidatingSplit.in_FilePath>
+    <InArgument x:TypeArguments="x:String" />
+  </this:ValidatingSplit.in_FilePath>
+  <this:ValidatingSplit.list_AccountNumber>
+    <InArgument x:TypeArguments="s:String[]" />
+  </this:ValidatingSplit.list_AccountNumber>
+  <this:ValidatingSplit.in_PageCount>
+    <InArgument x:TypeArguments="x:Int32" />
+  </this:ValidatingSplit.in_PageCount>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>934,3946</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ValidatingSplit_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.PDF</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.Vision.OmniPage.Core</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.OmniPage.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.PDF.Activities.PDF</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.PDF</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.OmniPage.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.StudioWeb.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OmniPage.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Persistence.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ValidatingSplit" sap:VirtualizedContainerService.HintSize="852,3881" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="PageNumber" />
+      <Variable x:TypeArguments="x:Int32" Name="PagestartNumber" />
+      <Variable x:TypeArguments="x:String" Name="FirstPageText" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="790,3770" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="752,3542" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[in_PageCount*2]">
+          <ui:RetryScope.ActivityBody>
+            <ActivityAction>
+              <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="710,3173" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="PdfText" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Assign sap:VirtualizedContainerService.HintSize="648,81" sap2010:WorkflowViewState.IdRef="Assign_1">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Int32">[PageNumber]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Int32">[PageNumber+1]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="648,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[PageNumber]" />
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="648,52" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,285" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="[in_FilePath]" sap:VirtualizedContainerService.HintSize="388,82" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="[PageNumber.tostring]" Text="[PdfText]" />
+                      <If Condition="[String.IsNullOrEmpty(PdfText)]" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="If_4">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="300,140" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="258,52" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                              <ui:CommentOut.Body>
+                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,265" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:ReadPDFWithOCR DegreeOfParallelism="-1" DisplayName="Read PDF With OCR" FileName="[in_FilePath]" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_2" ImageDpi="150" Range="All" Text="[PdfText]">
+                                    <ui:ReadPDFWithOCR.OCREngine>
+                                      <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                                        <ActivityFunc.Argument>
+                                          <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                                        </ActivityFunc.Argument>
+                                        <p:UiPathDocumentOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="6BoGElHtfycnYBaU/dsv9seUgKshrNLWyWTOgulhc8SgyxJeHb6Sxr9ArhOlNmy0q7vItffpypbkci+z9n/eKA==" ComputeSkewAngle="False" DisplayName="UiPath Document OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathDocumentOCR_1" Image="[Image]" Language="auto" NoopExecution="False" Profile="None" Scale="1" Timeout="100000" />
+                                      </ActivityFunc>
+                                    </ui:ReadPDFWithOCR.OCREngine>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:ReadPDFWithOCR>
+                                </Sequence>
+                              </ui:CommentOut.Body>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:CommentOut>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                    </Sequence>
+                  </ui:CommentOut.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:CommentOut>
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="648,52" sap2010:WorkflowViewState.IdRef="CommentOut_12">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_11">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[PagestartNumber]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[if(PageNumber=1,pagenumber,pagestartnumber)]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </ui:CommentOut.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:CommentOut>
+                <ui:ReadPDFWithOCR DegreeOfParallelism="-1" DisplayName="Read PDF With OCR" FileName="[in_FilePath]" sap:VirtualizedContainerService.HintSize="648,157" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_1" ImageDpi="150" Range="[PageNumber.ToString]" Text="[PdfText]">
+                  <ui:ReadPDFWithOCR.OCREngine>
+                    <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                      <ActivityFunc.Argument>
+                        <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                      </ActivityFunc.Argument>
+                      <uoa:OmniPageOCR Language="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" BundleType="Basic" ComputeSkewAngle="False" DisplayName="OmniPage OCR" ExtractHandprintedText="False" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="OmniPageOCR_3" Image="[Image]" NoopExecution="False" />
+                    </ActivityFunc>
+                  </ui:ReadPDFWithOCR.OCREngine>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:ReadPDFWithOCR>
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="648,52" sap2010:WorkflowViewState.IdRef="CommentOut_13">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,163" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If Condition="[list_AccountNumber.any(function(x) (not NewName.contains(x.tostring.trim)) and PdfText.tostring.tolower.replace(&quot;-&quot;,&quot;&quot;).contains(if(x.tostring.trim.tolower.contains(&quot;-&quot;),x.tostring.trim.tolower.replace(&quot;-&quot;,&quot;&quot;),x.tostring.trim.tolower)))]" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="If_7">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="476,384" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_12">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[PagestartNumber]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[PageNumber]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_10">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[NewName]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[if(string.IsNullOrEmpty(NewName),list_AccountNumber.where(function(x) PdfText.tostring.tolower.trim.replace("-","").contains(if(x.tostring.tolower.trim.contains("-"),x.tostring.tolower.trim.replace("-",""),x.tostring.tolower.trim))).toarray(0),NewName+","+list_AccountNumber.where(function(x) PdfText.tostring.tolower.trim.replace("-","").contains(if(x.tostring.tolower.trim.contains("-"),x.tostring.tolower.trim.replace("-",""),x.tostring.tolower.trim))).toarray(0))]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:RenameFileX DisplayName="Rename File" FilePath="[in_FilePath.replace(&quot;.pdf&quot;,PageNumber.ToString+&quot;.pdf&quot;)]" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="RenameFileX_2" KeepExtension="True" NewName="[list_AccountNumber.where(function(x) PdfText.tostring.tolower.trim.replace(&quot;-&quot;,&quot;&quot;).contains(if(x.tostring.tolower.trim.contains(&quot;-&quot;),x.tostring.tolower.trim.replace(&quot;-&quot;,&quot;&quot;),x.tostring.tolower.trim))).toarray(0)]">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:RenameFileX>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap:VirtualizedContainerService.HintSize="476,170" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_13" />
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                    </Sequence>
+                  </ui:CommentOut.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:CommentOut>
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="648,52" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,244" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[in_FilePath.replace(&quot;.pdf&quot;,&quot;.txt&quot;)]" sap:VirtualizedContainerService.HintSize="388,133" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[PdfText]" />
+                    </Sequence>
+                  </ui:CommentOut.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:CommentOut>
+                <If Condition="[PageNumber=1 or string.IsNullOrEmpty(FirstPageText)]" sap:VirtualizedContainerService.HintSize="648,52" sap2010:WorkflowViewState.IdRef="If_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If.Then>
+                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="476,290" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_2">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[FirstPageText]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[PdfText]</InArgument>
+                        </Assign.Value>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_3">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[PagestartNumber]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[PageNumber]</InArgument>
+                        </Assign.Value>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Assign>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </If.Else>
+                </If>
+                <If Condition="[(((if(pdftext.contains(&quot;cu&quot;),(PdfText.tolower.Replace(&quot;cu&quot;,&quot;&quot;).trim.split(vblf)(0) =FirstPageText.tolower.Replace(&quot;cu&quot;,&quot;&quot;).trim.split(vblf)(0)) and (PdfText.tolower.Replace(&quot;cu&quot;,&quot;&quot;).trim.split(vblf)(1) =FirstPageText.tolower.Replace(&quot;cu&quot;,&quot;&quot;).trim.split(vblf)(1)),true)) or ((PdfText.split(vblf)(0) =FirstPageText.split(vblf)(0)) And (PdfText.split(vblf)(1) =FirstPageText.split(vblf)(1)))) And PageNumber&lt;&gt;1) or ((pagenumber&lt;&gt;1) and if(list_AccountNumber.any(function(x) PdfText.tostring.tolower.trim.replace(&quot;-&quot;,&quot;&quot;).contains(if(x.tostring.tolower.trim.contains(&quot;-&quot;),x.tostring.tolower.trim.replace(&quot;-&quot;,&quot;&quot;),x.tostring.tolower.trim))) and list_AccountNumber.any(function(x) FirstPageText.tostring.tolower.trim.replace(&quot;-&quot;,&quot;&quot;).contains(if(x.tostring.tolower.trim.contains(&quot;-&quot;),x.tostring.tolower.trim.replace(&quot;-&quot;,&quot;&quot;),x.tostring.tolower.trim))), list_AccountNumber.where(function(x) PdfText.tostring.tolower.trim.replace(&quot;-&quot;,&quot;&quot;).contains(if(x.tostring.tolower.trim.contains(&quot;-&quot;),x.tostring.tolower.trim.replace(&quot;-&quot;,&quot;&quot;),x.tostring.tolower.trim))).toarray(0) &lt;&gt; list_AccountNumber.where(function(x) FirstPageText.tostring.tolower.trim.replace(&quot;-&quot;,&quot;&quot;).contains(if(x.tostring.tolower.trim.contains(&quot;-&quot;),x.tostring.tolower.trim.replace(&quot;-&quot;,&quot;&quot;),x.tostring.tolower.trim))).toarray(0), false))]" sap:VirtualizedContainerService.HintSize="648,2103" sap2010:WorkflowViewState.IdRef="If_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If.Then>
+                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="614,1921" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="572,52" sap2010:WorkflowViewState.IdRef="CommentOut_9">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,246" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <upap:ExtractPDFPageRange DisplayName="Extract PDF Page Range" FileName="[in_FilePath]" sap:VirtualizedContainerService.HintSize="388,135" sap2010:WorkflowViewState.IdRef="ExtractPDFPageRange_1" OutputFileName="[in_FilePath.replace(&quot;.pdf&quot;,PageNumber.ToString+&quot;.pdf&quot;)]" Range="[PagestartNumber.tostring+&quot;-&quot;+(pagenumber-1).ToString]" />
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:CommentOut>
+                      <upap:ExtractPDFPageRange DisplayName="Extract PDF Page Range" FileName="[in_FilePath]" sap:VirtualizedContainerService.HintSize="572,68" sap2010:WorkflowViewState.IdRef="ExtractPDFPageRange_2" OutputFileName="[in_FilePath.replace(&quot;.pdf&quot;,PageNumber.ToString+&quot;.pdf&quot;)]" Range="[PagestartNumber.tostring+&quot;-&quot;+if(PageNumber=PagestartNumber,pagenumber,(pagenumber-1)).ToString]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </upap:ExtractPDFPageRange>
+                      <Sequence sap:VirtualizedContainerService.HintSize="572,1391" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="AccountNumber" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="510,52" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,285" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="[in_FilePath.replace(&quot;.pdf&quot;,PageNumber.ToString+&quot;.pdf&quot;)]" sap:VirtualizedContainerService.HintSize="388,82" sap2010:WorkflowViewState.IdRef="ReadPDFText_2" Range="All" Text="[PdfText]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:ReadPDFText>
+                              <If Condition="[String.IsNullOrEmpty(PdfText)]" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="If_5">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <If.Then>
+                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="300,140" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="258,52" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                                      <ui:CommentOut.Body>
+                                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,265" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:ReadPDFWithOCR DegreeOfParallelism="-1" DisplayName="Read PDF With OCR" FileName="[in_FilePath]" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_3" ImageDpi="150" Range="All" Text="[PdfText]">
+                                            <ui:ReadPDFWithOCR.OCREngine>
+                                              <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                                                <ActivityFunc.Argument>
+                                                  <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                                                </ActivityFunc.Argument>
+                                                <p:UiPathDocumentOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="6BoGElHtfycnYBaU/dsv9seUgKshrNLWyWTOgulhc8SgyxJeHb6Sxr9ArhOlNmy0q7vItffpypbkci+z9n/eKA==" ComputeSkewAngle="False" DisplayName="UiPath Document OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathDocumentOCR_2" Image="[Image]" Language="auto" NoopExecution="False" Profile="None" Scale="1" Timeout="100000" />
+                                              </ActivityFunc>
+                                            </ui:ReadPDFWithOCR.OCREngine>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:ReadPDFWithOCR>
+                                        </Sequence>
+                                      </ui:CommentOut.Body>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:CommentOut>
+                                  </Sequence>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,100" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:CommentOut>
+                        <ui:ReadPDFWithOCR DegreeOfParallelism="-1" DisplayName="Read PDF With OCR" FileName="[in_FilePath.replace(&quot;.pdf&quot;,PageNumber.ToString+&quot;.pdf&quot;)]" sap:VirtualizedContainerService.HintSize="510,157" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_4" ImageDpi="150" Range="All" Text="[PdfText]">
+                          <ui:ReadPDFWithOCR.OCREngine>
+                            <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                              <ActivityFunc.Argument>
+                                <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                              </ActivityFunc.Argument>
+                              <uoa:OmniPageOCR Language="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" BundleType="Basic" ComputeSkewAngle="False" DisplayName="OmniPage OCR" ExtractHandprintedText="False" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="OmniPageOCR_4" Image="[Image]" NoopExecution="False" />
+                            </ActivityFunc>
+                          </ui:ReadPDFWithOCR.OCREngine>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:ReadPDFWithOCR>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[in_FilePath.replace(&quot;.pdf&quot;,PageNumber.ToString+&quot;.pdf&quot;)]" />
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="510,52" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:Matches BuilderPattern="(?&lt;=BILL ACCOUNT NUMBER:).*(?=BILLING)|(?&lt;=Account Number:).*|(?&lt;=CUSTOMER #).\d*|^.+(?=NYSEG)|(?&lt;=X{4,10}).+" DisplayName="Find Matching Patterns" FirstMatch="[AccountNumber]" sap:VirtualizedContainerService.HintSize="388,60" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[PdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=BILL ACCOUNT NUMBER:).*(?=BILLING)|(?&lt;=Account Number:).*|(?&lt;=CUSTOMER #).\\d*|^.+(?=NYSEG)|(?&lt;=X{4,10}).+&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=BILL ACCOUNT NUMBER:).*(?=BILLING)|(?&lt;=Account Number:).*|(?&lt;=CUSTOMER #).\d*|^.+(?=NYSEG)|(?&lt;=X{4,10}).+" RegexOption="IgnoreCase, Compiled" Result="[List_AccountNumbers]" />
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:CommentOut>
+                        <If Condition="[list_AccountNumber.any(function(x) PdfText.tostring.tolower.replace(&quot;-&quot;,&quot;&quot;).contains(if(x.tostring.trim.tolower.contains(&quot;-&quot;),x.tostring.trim.tolower.replace(&quot;-&quot;,&quot;&quot;),x.tostring.trim.tolower)))]" sap:VirtualizedContainerService.HintSize="510,718" sap2010:WorkflowViewState.IdRef="If_3">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="476,536" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[NewName]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[if(string.IsNullOrEmpty(NewName),list_AccountNumber.where(function(x) PdfText.tostring.tolower.trim.replace("-","").contains(if(x.tostring.tolower.trim.contains("-"),x.tostring.tolower.trim.replace("-",""),x.tostring.tolower.trim))).toarray(0),NewName+","+list_AccountNumber.where(function(x) PdfText.tostring.tolower.trim.replace("-","").contains(if(x.tostring.tolower.trim.contains("-"),x.tostring.tolower.trim.replace("-",""),x.tostring.tolower.trim))).toarray(0))]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:RenameFileX DisplayName="Rename File" FilePath="[in_FilePath.replace(&quot;.pdf&quot;,PageNumber.ToString+&quot;.pdf&quot;)]" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="RenameFileX_1" KeepExtension="True" NewName="[list_AccountNumber.where(function(x) PdfText.tostring.tolower.trim.replace(&quot;-&quot;,&quot;&quot;).contains(if(x.tostring.tolower.trim.contains(&quot;-&quot;),x.tostring.tolower.trim.replace(&quot;-&quot;,&quot;&quot;),x.tostring.tolower.trim))).toarray(0).trim]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:RenameFileX>
+                              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="CommentOut_10">
+                                <ui:CommentOut.Body>
+                                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,192" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_9">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="s:String[]">[List_AccountNumber]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="s:String[]">[list_AccountNumber.AsEnumerable()]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                  </Sequence>
+                                </ui:CommentOut.Body>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:CommentOut>
+                              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+                                <ui:CommentOut.Body>
+                                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,163" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <If Condition="[PageNumber=1]" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="If_6">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <If.Then>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="476,414" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Object">[CurrentRow("Account Number")]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:String">[AccountNumber]</InArgument>
+                                            </Assign.Value>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Assign>
+                                          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Object">[io_Dt_Summary.rows(io_Dt_Summary.rowcount-1)("Extraction Status")]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Object">["Success"]</InArgument>
+                                            </Assign.Value>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Assign>
+                                          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Object">[io_Dt_Summary.rows(io_Dt_Summary.rowcount-1)("Updated File Name")]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Object">[in_FilePath.replace(split(in_FilePath,"\")(split(in_FilePath,"\").count-1),List_AccountNumbers(0).tostring.trim+".pdf")]</InArgument>
+                                            </Assign.Value>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Assign>
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="300,140" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="258,52" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+                                            <ui:CommentOut.Body>
+                                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,297" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{in_MailAccount,in_TransactionItem.SpecificContent(&quot;MailFrom&quot;).ToString,in_TransactionItem.SpecificContent(&quot;MailSubject&quot;).ToString,&quot;&quot;,&quot;&quot;,in_FilePath.replace(split(in_FilePath,&quot;\&quot;)(split(in_FilePath,&quot;\&quot;).count-1),List_AccountNumbers(0).tostring.trim+&quot;.pdf&quot;),&quot;Success&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;}]" DataTable="[io_Dt_Summary]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="388,186" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </ui:AddDataRow>
+                                              </Sequence>
+                                            </ui:CommentOut.Body>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:CommentOut>
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
+                                  </Sequence>
+                                </ui:CommentOut.Body>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:CommentOut>
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence sap:VirtualizedContainerService.HintSize="376,168" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="334,80" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[in_FilePath.replace(&quot;.pdf&quot;,PageNumber.ToString+&quot;.pdf&quot;)]" />
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                      </Sequence>
+                      <Assign sap:VirtualizedContainerService.HintSize="572,81" sap2010:WorkflowViewState.IdRef="Assign_7">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[FirstPageText]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">
+                            <Literal x:TypeArguments="x:String" Value="" />
+                          </InArgument>
+                        </Assign.Value>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="572,81" sap2010:WorkflowViewState.IdRef="Assign_14">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[PageNumber]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[if(PageNumber&lt;&gt;PagestartNumber,PageNumber-1,pagenumber)]</InArgument>
+                        </Assign.Value>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Assign>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </If.Else>
+                </If>
+              </Sequence>
+            </ActivityAction>
+          </ui:RetryScope.ActivityBody>
+          <ui:RetryScope.Condition>
+            <ActivityFunc x:TypeArguments="x:Boolean">
+              <ui:CheckTrue ErrorMessage="{x:Null}" DisplayName="Check True" Expression="[PageNumber=in_PageCount]" sap:VirtualizedContainerService.HintSize="334,129" sap2010:WorkflowViewState.IdRef="CheckTrue_1" />
+            </ActivityFunc>
+          </ui:RetryScope.Condition>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:RetryScope>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="756,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Rethrow sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+  </Sequence>
+</Activity>

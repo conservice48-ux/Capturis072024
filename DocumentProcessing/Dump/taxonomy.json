@@ -1,0 +1,4693 @@
+﻿{
+  "DataContractVersion": "1.1",
+  "DocumentTypes": [
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.AlamedaCountyWater",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Alameda County Water",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.AlamedaCountyWater.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.AlamedaCountyWater.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AlamedaCountyWater.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AlamedaCountyWater.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fcd98f"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AlamedaCountyWater.Duedate",
+          "FieldName": "Due date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#b34692"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AlamedaCountyWater.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#ea57ba"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.AlectraUtilities",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Alectra Utilities",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.AlectraUtilities.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.AlectraUtilities.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AlectraUtilities.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AlectraUtilities.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AlectraUtilities.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AlectraUtilities.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#a759f8"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.AlliantEnergy",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Alliant Energy",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.AlliantEnergy.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.AlliantEnergy.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AlliantEnergy.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AlliantEnergy.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fcd98f"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AlliantEnergy.Duedate",
+          "FieldName": "Due date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#b34692"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AlliantEnergy.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6959f8"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.AmerenMissouri",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Ameren Missouri",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.AmerenMissouri.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.AmerenMissouri.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AmerenMissouri.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AmerenMissouri.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AmerenMissouri.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#b34692"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AmerenMissouri.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#ea57ba"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.AMU",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "AMU",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.AMU.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.AMU.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AMU.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AMU.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AMU.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#b34692"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AMU.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6659f8"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.Appalachian",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Appalachian",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.Appalachian.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.Appalachian.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.Appalachian.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.Appalachian.DueAmount",
+          "FieldName": "Due Amount ",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.Appalachian.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.Appalachian.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#e422cf"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.CityofArdmore",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "City of Ardmore",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.CityofArdmore.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.CityofArdmore.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CityofArdmore.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CityofArdmore.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CityofArdmore.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CityofArdmore.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#f300f2"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.CityofArlington",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "City of Arlington",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.CityofArlington.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.CityofArlington.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CityofArlington.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CityofArlington.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CityofArlington.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CityofArlington.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#e944a4"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.AT&T",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "AT&T",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.AT&T.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.AT&T.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AT&T.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AT&T.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AT&T.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AT&T.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d2d550"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.AthensUtilities",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Athens Utilities",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.AthensUtilities.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.AthensUtilities.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AthensUtilities.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AthensUtilities.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AthensUtilities.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AthensUtilities.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#cbc890"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.AtmosEnergy",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Atmos Energy",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.AtmosEnergy.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.AtmosEnergy.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AtmosEnergy.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AtmosEnergy.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AtmosEnergy.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.AtmosEnergy.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#e422cf"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.CityofAzusa",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "City of Azusa",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.CityofAzusa.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.CityofAzusa.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CityofAzusa.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CityofAzusa.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CityofAzusa.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CityofAzusa.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#ea57ba"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.BaldwinAMC",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Baldwin AMC",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.BaldwinAMC.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.BaldwinAMC.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BaldwinAMC.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BaldwinAMC.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BaldwinAMC.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BaldwinAMC.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#f446cf"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.BangorWater",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Bangor Water",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.BangorWater.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.BangorWater.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BangorWater.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BangorWater.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BangorWater.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BangorWater.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d552f9"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.BatonRougeWaterCompany",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Baton Rouge Water Company",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.BatonRougeWaterCompany.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.BatonRougeWaterCompany.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BatonRougeWaterCompany.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BatonRougeWaterCompany.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BatonRougeWaterCompany.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BatonRougeWaterCompany.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#e422cf"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.BCHydro",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "BC Hydro",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.BCHydro.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.BCHydro.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BCHydro.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BCHydro.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BCHydro.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BCHydro.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#c86bd7"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.BellAtlantic",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Bell Atlantic",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.BellAtlantic.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.BellAtlantic.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BellAtlantic.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BellAtlantic.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BellAtlantic.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BellAtlantic.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d2d550"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.BentonUtilities",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Benton Utilities",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.BentonUtilities.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.BentonUtilities.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BentonUtilities.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BentonUtilities.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BentonUtilities.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BentonUtilities.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8352f9"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.Eversource",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Eversource",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.Eversource.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.Eversource.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.Eversource.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.Eversource.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.Eversource.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.Eversource.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#ea57ba"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.BGE",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "BGE",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.BGE.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.BGE.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BGE.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BGE.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BGE.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BGE.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d2d550"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.BroadRiver",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Broad River Electric",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.BroadRiver.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.BroadRiver.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BroadRiver.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BroadRiver.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BroadRiver.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BroadRiver.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#e527ca"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.BroadRiverWater",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Broad River Water",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.BroadRiverWater.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.BroadRiverWater.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BroadRiverWater.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BroadRiverWater.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BroadRiverWater.DueDate",
+          "FieldName": "Due Date ",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BroadRiverWater.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d2d550"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.BullheadCityUtilities",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Bullhead City Utilities",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.BullheadCityUtilities.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.BullheadCityUtilities.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BullheadCityUtilities.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BullheadCityUtilities.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BullheadCityUtilities.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BullheadCityUtilities.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d2d550"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.BurlingtonHydro",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Burlington Hydro",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.BurlingtonHydro.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.BurlingtonHydro.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BurlingtonHydro.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BurlingtonHydro.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BurlingtonHydro.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.BirminghamWaterWorksBoard",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Birmingham Water Works Board",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.BirminghamWaterWorksBoard.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.BirminghamWaterWorksBoard.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BirminghamWaterWorksBoard.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BirminghamWaterWorksBoard.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BirminghamWaterWorksBoard.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.BirminghamWaterWorksBoard.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#4e5dfd"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.CapitalCityMall",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Capital City Mall",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.CapitalCityMall.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.CapitalCityMall.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CapitalCityMall.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CapitalCityMall.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CapitalCityMall.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CapitalCityMall.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#1570ff"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.CAPITALELECTRIC",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "CAPITAL ELECTRIC",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.CAPITALELECTRIC.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.CAPITALELECTRIC.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CAPITALELECTRIC.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CAPITALELECTRIC.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CAPITALELECTRIC.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CAPITALELECTRIC.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#2bdbb4"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.Penske",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Penske",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.Penske.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.Penske.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.Penske.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.Penske.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.Penske.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.Penske.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#5f5df9"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.CarbonPower&Light",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Carbon Power & Light",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.CarbonPower&Light.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.CarbonPower&Light.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CarbonPower&Light.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CarbonPower&Light.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CarbonPower&Light.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CarbonPower&Light.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#7252f9"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.Cartersville",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Cartersville",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.Cartersville.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.Cartersville.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.Cartersville.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.Cartersville.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.Cartersville.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.Cartersville.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#3869ff"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.CascadeNaturalGas",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Cascade Natural Gas",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.CascadeNaturalGas.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.CascadeNaturalGas.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CascadeNaturalGas.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CascadeNaturalGas.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CascadeNaturalGas.ueDate",
+          "FieldName": "ue Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CascadeNaturalGas.invoicenumber",
+          "FieldName": "invoice number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#e422cf"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.Casella",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Casella",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.Casella.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.Casella.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.Casella.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.Casella.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.Casella.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.Casella.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d2d550"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.CenterPointEnergy",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Center Point Energy",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.CenterPointEnergy.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.CenterPointEnergy.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CenterPointEnergy.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CenterPointEnergy.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CenterPointEnergy.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CenterPointEnergy.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#cbbc97"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.CentralArkenes",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Central Arkenes",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.CentralArkenes.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.CentralArkenes.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CentralArkenes.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CentralArkenes.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CentralArkenes.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CentralArkenes.Invoicenumber",
+          "FieldName": "Invoice number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d2d550"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.CentralHudson",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "Central Hudson",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.CentralHudson.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.CentralHudson.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CentralHudson.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CentralHudson.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CentralHudson.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CentralHudson.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#b4e322"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.CityofPasadane",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "City of Pasadane",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.CityofPasadane.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.CityofPasadane.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CityofPasadane.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CityofPasadane.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CityofPasadane.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CityofPasadane.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d2d550"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "Capturis.Bills.CityofADEL",
+      "Group": "Capturis",
+      "Category": "Bills",
+      "Name": "City of ADEL",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Capturis.Bills.CityofADEL.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Capturis.Bills.CityofADEL.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CityofADEL.AccountName",
+          "FieldName": "Account Name",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CityofADEL.DueAmount",
+          "FieldName": "Due Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CityofADEL.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "Capturis.Bills.CityofADEL.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#cac342"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
+    }
+  ],
+  "Groups": [
+    {
+      "Name": "Capturis",
+      "Categories": [
+        "Bills"
+      ]
+    }
+  ],
+  "SupportedLanguages": [
+    {
+      "Name": "Undetermined Language",
+      "Code": "und"
+    },
+    {
+      "Name": "Bulgarian",
+      "Code": "bul"
+    },
+    {
+      "Name": "Cantonese",
+      "Code": "yue"
+    },
+    {
+      "Name": "Danish",
+      "Code": "dan"
+    },
+    {
+      "Name": "Dutch",
+      "Code": "nld"
+    },
+    {
+      "Name": "English",
+      "Code": "eng"
+    },
+    {
+      "Name": "French",
+      "Code": "fra"
+    },
+    {
+      "Name": "Georgian",
+      "Code": "kat"
+    },
+    {
+      "Name": "German",
+      "Code": "deu"
+    },
+    {
+      "Name": "Greek",
+      "Code": "ell"
+    },
+    {
+      "Name": "Hebrew",
+      "Code": "heb"
+    },
+    {
+      "Name": "Hindi",
+      "Code": "hin"
+    },
+    {
+      "Name": "Italian",
+      "Code": "ita"
+    },
+    {
+      "Name": "Japanese",
+      "Code": "jpn"
+    },
+    {
+      "Name": "Korean",
+      "Code": "kor"
+    },
+    {
+      "Name": "Macedonian",
+      "Code": "mkd"
+    },
+    {
+      "Name": "Mandarin",
+      "Code": "zho"
+    },
+    {
+      "Name": "Marathi",
+      "Code": "mar"
+    },
+    {
+      "Name": "Norwegian",
+      "Code": "nor"
+    },
+    {
+      "Name": "Polish",
+      "Code": "pol"
+    },
+    {
+      "Name": "Portuguese",
+      "Code": "por"
+    },
+    {
+      "Name": "Romanian",
+      "Code": "ron"
+    },
+    {
+      "Name": "Russian",
+      "Code": "rus"
+    },
+    {
+      "Name": "Serbian",
+      "Code": "srp"
+    },
+    {
+      "Name": "Spanish",
+      "Code": "spa"
+    },
+    {
+      "Name": "Swedish",
+      "Code": "swe"
+    },
+    {
+      "Name": "Telugu",
+      "Code": "tel"
+    },
+    {
+      "Name": "Turkish",
+      "Code": "tur"
+    }
+  ]
+}

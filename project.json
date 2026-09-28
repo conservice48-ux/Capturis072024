@@ -1,0 +1,113 @@
+{
+  "name": "EmailCapturis_Bot",
+  "projectId": "4f5a174a-2ade-45dc-b0d6-4f6f89104974",
+  "description": "Robotic Enterprise Framework",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.DocumentUnderstanding.Activities": "[2.9.0]",
+    "UiPath.DocumentUnderstanding.ML.Activities": "[1.28.1]",
+    "UiPath.Excel.Activities": "[2.22.4]",
+    "UiPath.IntelligentOCR.Activities": "[6.19.0]",
+    "UiPath.Mail.Activities": "[1.23.0]",
+    "UiPath.OmniPage.Activities": "[1.19.1]",
+    "UiPath.PDF.Activities": "[3.19.1]",
+    "UiPath.Persistence.Activities": "[1.5.5]",
+    "UiPath.System.Activities": "[24.3.1]",
+    "UiPath.Testing.Activities": "[24.4.0-preview]",
+    "UiPath.UIAutomation.Activities": "[24.4.1-preview]",
+    "UiPath.Word.Activities": "[1.18.1]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "24.4.0.0",
+  "projectVersion": "1.0.1-alpha",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": false,
+    "supportsPersistence": true,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "42dbe86c-76b7-4663-aee6-fc0c96e4a14c",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\GetTransactionDataTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "992dc414-6c33-43e8-9899-672131f2c651",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\InitAllApplicationsTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1a51b02b-dc6f-421a-866e-920dc1afc152",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\InitAllSettingsTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6fe21409-0f79-4c56-a447-b06b220413a5",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\MainTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f414ecdc-1d5d-4979-ba41-decc62ef6720",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\ProcessTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "23d705f0-1d5f-47f2-9cae-c7eaf1e16841",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
+      }
+    ],
+    "modernBehavior": false,
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "ea018918-09a2-4c08-ad6b-e11ca79ec643",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

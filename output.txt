@@ -1,0 +1,1 @@
+if(String.IsNullOrEmpty(currentrow(12).tostring),",currentrow(12).tostring)
